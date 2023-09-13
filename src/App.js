@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import Header from './components/Header'
+import styled from 'styled-components'
 
+//o styled div é um componente estilizado que nos permite criar um "css" dentro do arquivo js
+const AppContainer = styled.div`
+width: 100vw;
+height: 100vh;
+background-image: linear-gradient(90deg, #02461c 35%, #34a056);
+
+li {
+  list-style: none
+}
+`
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <Header/>
+    </AppContainer>
   );
 }
 
 export default App;
+
+
