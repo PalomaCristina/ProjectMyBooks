@@ -1,4 +1,3 @@
-import './style.css'
 import styled from  'styled-components'
 
 const Option = styled.li`
@@ -20,8 +19,8 @@ const optionsText = ['CATEGORIAS', 'FAVORITOS' , 'SACOLA']
 function OptionsHeader(){
     return (
         <Options>
-        { optionsText.map( (texto) => ( //aqui estou navegando pela lista optionsText e apresentando na tela cada uma das posicoes
-        <Option><p>{texto}</p></Option>
+        { optionsText.map( (texto, index) => ( //aqui estou navegando pela lista optionsText e apresentando na tela cada uma das posicoes
+        <Option key={index}><p>{texto}</p></Option>
         ) ) }
         </Options>
     )

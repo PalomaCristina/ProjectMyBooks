@@ -16,8 +16,8 @@ const icons = [perfil, bag];
 function IconHeader() {
     return (
     <Icons>
-        {icons.map((icon) => (
-            <Icon>
+        {icons.map((icon, index) => (
+            <Icon key={index}>
                 <img src={icon} alt='icones'></img>
             </Icon>
         ))}

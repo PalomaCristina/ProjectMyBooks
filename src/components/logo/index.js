@@ -1,4 +1,4 @@
-import logo from '../../images/logo.svg'
+import logo from '../../images/bookshelf.png'
 import styled from 'styled-components'
 
 const Loggo = styled.div`
@@ -7,7 +7,7 @@ font-size: 30px;
 `
 
 const LogoImage = styled.img`
-margin-right: 10px;
+margin-right: 5px;
 `
 
 function Logo() {
@@ -16,7 +16,7 @@ function Logo() {
             <LogoImage 
                 src={logo}
                 alt='logo'/>
-            <p><strong>My</strong>Books</p>
+            <p><strong>Lumus</strong>Library</p>
         </Loggo>
     )
 }
